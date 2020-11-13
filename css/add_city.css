@@ -1,0 +1,31 @@
+.form-popup {
+    display: none;  
+}
+
+.form-container {
+    max-width: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+}
+
+.form-container .btn {
+    background-color: #1976D2;
+    opacity: 0.7;
+}
+
+.form-container .cancel {
+    background-color: #448AFF;
+}
+
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}

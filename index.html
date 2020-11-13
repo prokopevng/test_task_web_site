@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Города</title>
+        <meta charset="utf-8">
+
+        <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="css/add_city.css">
+        
+        <!-- <script type="text/javascript" src="scripts/addCity.js"></script> -->
+        <script type="text/javascript" src="scripts/city_data_provider.js"></script>
+        
+        
+    </head>
+    <body>
+        <button id="addCityButton" onclick="open_add_city_form()">Добавить город</button>
+
+        <!-- Контейнер для хранения формы ввода и изменения информации о городе -->
+        <div class="form-popup" id="cityForm">
+            <form action="#" method="post" class="form-container">
+                <h1 id="captionCityForm">Добавить город</h1>
+                <label for="name"><b>Название города</b></label>
+                <input id="nameValue" type="text" placeholder="Название города" name="name" required>
+                <label for="population"><b>Население</b></label>
+                <input id="populationValue" type="text" placeholder="Население" name="population" required>
+                <button type="button" id="submitBtnCityForm" class="btn"  onclick="insert_city_db()">Отправить</button>
+                <button type="button" class="btn cancel" onclick="close_city_form()">Закрыть</button>
+            </form>
+        </div>
+        
+        <!-- Таблица с информацией о городах -->
+        <div id="table_cities"></div>
+
+    </body>
+</html>
